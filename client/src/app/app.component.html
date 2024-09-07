@@ -1,0 +1,89 @@
+<div class="navigation">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav" *ngIf="identity">
+                <li>
+                    <a [routerLink]="['/home']" [routerLinkActive]="['active']">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/timeline']" [routerLinkActive]="['active']">
+                        Timeline
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/people']" [routerLinkActive]="['active']">
+                        People
+                    </a>
+                </li>
+                 <li>
+                    <a [routerLink]="['/messages']" [routerLinkActive]="['active']">
+                        Messages
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/chat']" [routerLinkActive]="['active']">
+                        Chat
+                    </a>
+                </li>
+
+            </ul>
+
+            <!--MENU IF DONT IDENTIFIED-->
+            <ul class="nav navbar navbar-nav navbar-right" *ngIf="!identity">
+            <li>
+                <a [routerLink]="['/login']" [routerLinkActive]="['active']">
+                    Login
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/register']" [routerLinkActive]="['active']">
+                    Register
+                </a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right" *ngIf="identity">
+                <li class="avatar">
+                    <img src="{{ url + 'get-image-user/' + identity.image}}" *ngIf="identity && identity.image"/>
+                    <img src="assets/user-icon.jpg" *ngIf="!identity.image"/>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        {{identity.name}} <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                             <a [routerLink]="['/profile/', identity._id]">
+                                My Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/account']">
+                                Account Details
+                            </a>
+                        </li>
+                        <li>
+                            <a class="pointer" (click)="lougout()">
+                                Close Session
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+            </ul>
+
+
+        </div>
+    </nav>
+</div>
+
+<section id="content">
+    <router-outlet></router-outlet>
+</section>
+
+<!--<footer class="footer">
+    Centro Médico Bailén &copy;
+</footer>-->

@@ -1,0 +1,98 @@
+/*GLOBAL*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../assets/images/306896-P82I1J-699.jpg) repeat;
+}
+
+.h1-strong{
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.active{
+    background: #cc1717;
+}
+
+.jumbotron{
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/**PEOPLE**/
+
+.item-user .image-user,
+.item-publication .image-user{
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.item-user .image-user img,
+.item-publication .image-user img{
+    width: 100% !important;
+}
+
+.item-user .user-name,
+.item-publication .user-name{
+    margin-top: 10px;
+}
+
+.item-user .user-name .nickname{
+    color: #969393;
+}
+
+.item-user .user-name .name-surname a{
+    color: #555;
+    font-weight: bold;
+}
+
+.avatar-default{
+    width: 100% !important;
+}
+
+/**CHAT**/
+
+.message {
+    margin: 12px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background: white;
+    box-shadow: 1px 0px 10px #888888;
+    padding: 10px;
+}
+.hour {
+    font-size: 14px;
+    font-style: italic;
+    color: grey;
+    text-align: right;
+    float: right;
+    margin-right: 5px;
+}
+
+.hour span {
+    position:relative;
+}
+
+.connection {
+    margin-left: 5px;
+    font-style: italic;
+    color: dimgrey;
+    font-size: 17px;
+    font-family: "yanone", "Arial", "Helvetica";
+    padding-bottom: 5px;
+}
+

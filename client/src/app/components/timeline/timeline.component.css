@@ -1,0 +1,210 @@
+@font-face{
+    font-family: "Gilroy-Light";
+    src: url("../../../assets/fonts/Gilroy-Light.otf");
+}
+
+* {
+    text-decoration: none !important;
+}
+
+
+#publications {
+    margin-left: 15px;
+}
+
+#publications .date{
+  color: gray;
+}
+
+.panel-default {
+    border-radius: 15px !important;
+}
+
+.item-publication{
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px #888888;
+    width: 100%;
+}
+
+.user-name,
+.date{
+    font-family: "Gilroy-Light" !important;
+    text-decoration: none !important;
+}
+
+.user-name{
+     color: black !important;
+}
+
+.publication-button{
+    margin-top: -19px !important;
+}
+
+.delete, .show-image{
+    color: darkgray;
+    transition: 0.2s;
+}
+
+
+.show-image{
+    margin-right: 8px;
+}
+
+.delete:hover{
+    color: #b31111;
+}
+
+.show-image:hover{
+    color: black;
+}
+
+.publication-image{
+    position: relative;
+}
+
+.close-image{
+    position: absolute;
+    top: 22px;
+    right: 34px;
+    background-color: white;
+    opacity: 0.6;
+    border-radius: 14px;
+    height: 25px;
+    transition: 0.2s;
+}
+
+.glyphicon-remove-circle{
+    font-size: 25px;
+    color:black;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.close-image:hover,
+.glyphicon-remove-circle:hover{
+    opacity: 1;
+}
+
+.publication-image{
+    margin-bottom: 21px;
+}
+
+.modal-title{
+    font-family: "Gilroy-Light";
+}
+
+.load-more{
+    font-size: 25px;
+    color: gray;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.load-more:hover{
+    color: #444444;
+}
+
+.likes-container{
+    position: relative;
+    margin-top: 5px;
+    margin-right: 4px;
+}
+
+.likes{
+    float: right !important;
+    margin-top: 15px !important;
+    margin-right: -13px !important;
+    font-size: 10px;
+}
+
+.heart{
+   width: 21px;
+   float: right;
+   margin-top: 30px;
+}
+
+.no-publications{
+  font-size: 22px;
+  margin-left: 5px;
+  min-height: 600px;
+  padding-top: 10px;
+}
+.publication-text-container {
+  width: 100%;
+}
+.publication-text {
+  word-wrap:break-word !important;
+  display:inline-block !important;
+  width: 70%;
+}
+.comments-section {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comments-list {
+    margin-bottom: 20px;
+  }
+  
+  .comment-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .comment-item p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .comment-item strong {
+    color: #333;
+  }
+  
+  .add-comment-form {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .add-comment-form input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .add-comment-form input:focus {
+    border-color: #007bff;
+  }
+  
+  .add-comment-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .add-comment-form button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .add-comment-form button:focus {
+    outline: none;
+  }
+  
